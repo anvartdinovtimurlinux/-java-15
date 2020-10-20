@@ -12,11 +12,18 @@ public class Main {
         System.out.println(sample2);
 
 
-        ArrayList<Box<String, Integer>> list1 = new ArrayList<>();
+//        ArrayList<Box<String, Integer>> list1 = new ArrayList<>();
+//        list1.add(sample1);
+//        list1.add(sample2);
+//         параметры Box, хранящегося в list1 не соответсвуют параметрам, добавляемых туда значений
+//         <String, String> != <String, Integer> && <Integer, Boolean> != <String, Integer>
+
+
+        ArrayList<Box> list1 = new ArrayList<>();
         list1.add(sample1);
         list1.add(sample2);
-        // параметры Box, хранящегося в list1 не соответсвуют параметрам, добавляемых туда значений
-        // <String, String> != <String, Integer> && <Integer, Boolean> != <String, Integer>
+
+        System.out.println(list1);
     }
 
 }
